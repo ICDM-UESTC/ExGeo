@@ -1,8 +1,8 @@
 # ExGeo
-2.Update log(23.10.27): We modified the prior probability parameter p=0.1 of Aib. If we want to reproduce the explainability experiment, it may be more obvious to use smaller probability parameters. It is worth noting that different weight coefficients 'beta' will eventually make the learned Q(Aib/A) converge to the prior distribution P(A). A larger weight coefficient 'beta' will retain fewer nodes with the same accuracy.
+2.Update log(23.10.27): We modified the prior probability parameter p=0.1 for Aib. It will be more obvious to use a smaller probability parameter if we want to reproduce the interpretability experiment. It is worth noting that different weights 'beta' will eventually make the learned Q(Aib/A) converge to the prior distribution P(A). However, by our careful observation of the convergence process, we can see that a larger weight 'beta' will retain fewer nodes with the same performance(mse,median,rmse), which is consistent with our experimental results.
+
 
 1.Update log(23.10.19): We supplement code for print the mask_matrix in main.py which can show the change of matrix by change the number of epoch.
-
 
 
 ![](https://img.shields.io/badge/python-3.8.13-green)
